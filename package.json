@@ -1,0 +1,25 @@
+{
+  "name": "sql-massive-node",
+  "version": "1.0.0",
+  "description": "Today we're going to make our first full CRUD back-end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/missyjeanbeutler/sql-massive-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/missyjeanbeutler/sql-massive-node/issues"
+  },
+  "homepage": "https://github.com/missyjeanbeutler/sql-massive-node#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "massive": "^3.0.0-rc1"
+  }
+}
