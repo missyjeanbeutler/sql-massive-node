@@ -8,14 +8,7 @@ let port = 3000;
 
 app.use(bodyParser.json());
 
-//------------------- OLD STUFF
 
-// let db = massive.connectSync({
-//     connectionString: 'postgres://postgres:@localhost/massive_demo'
-// })
-// app.set('db', db); //.set makes it excessible outside of this file so I can use .get and get db elsewhere
-
-//------------------- NEW STUFF
 
 massive({
     host: 'localhost',
@@ -24,7 +17,8 @@ massive({
     user: 'postgres',
     password: ''
 }).then(db => {
-    app.set('db', db)
+    app.set('db', db) //allows you to set keys to the app object, the response is the database connection
+
 })
 
 
