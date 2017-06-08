@@ -1,3 +1,5 @@
+//EXAMPLE WITHOUT DM-MASSIFIER ON MASTER BRANCH
+
 let express = require('express');
 let massive = require('massive');
 let bodyParser = require('body-parser');
