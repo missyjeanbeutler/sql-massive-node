@@ -11,20 +11,6 @@ app.use(bodyParser.json());
 app.use(massifier.middleware())
 
 
-
-// massive({
-//     host: 'localhost',
-//     port: 5432,
-//     database: 'massive_demo',
-//     user: 'postgres',
-//     password: ''
-// }).then(db => {
-//     app.set('db', db) //allows you to set keys to the app object, the response is the database connection
-
-// })
-
-
-
 let controller = require('./productsCtrl.js'); //this MUST be below any db declarations
 
 
