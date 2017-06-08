@@ -21,6 +21,7 @@ module.exports = {
     })
   },
   getAll: function (req, res) {
+    console.log(req.app.settings.db)
     req.app.get('db').readProducts().then(function (products) {
       res.send(products)
     }).catch(function (err) {
@@ -41,5 +42,5 @@ module.exports = {
       res.status(500).send(err)
     })
   }
-  
+
 }
