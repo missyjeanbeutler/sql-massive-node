@@ -19,6 +19,7 @@
   "homepage": "https://github.com/missyjeanbeutler/sql-massive-node#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "dm-massifier": "0.0.4",
     "express": "^4.15.3",
     "massive": "^3.0.0-rc1"
   }

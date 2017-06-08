@@ -1,29 +1,27 @@
-
-// CHECK THE OTHER BRANCH FOR HOW TO USE WITH DM-MASSIFIER!!
-
-
 let express = require('express');
 let massive = require('massive');
 let bodyParser = require('body-parser');
+let massifier = require('dm-massifier')('postgres://postgres:@localhost/massive_demo') //must be the connection string
 let app = module.exports = express();
 let port = 3000;
 
 //------------
 
 app.use(bodyParser.json());
+app.use(massifier.middleware())
 
 
 
-massive({
-    host: 'localhost',
-    port: 5432,
-    database: 'massive_demo',
-    user: 'postgres',
-    password: ''
-}).then(db => {
-    app.set('db', db) //allows you to set keys to the app object, the response is the database connection
+// massive({
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'massive_demo',
+//     user: 'postgres',
+//     password: ''
+// }).then(db => {
+//     app.set('db', db) //allows you to set keys to the app object, the response is the database connection
 
-})
+// })
 
 
 
